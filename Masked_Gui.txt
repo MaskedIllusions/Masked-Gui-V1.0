@@ -1,0 +1,114 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local MaskedGui = Instance.new("TextLabel")
+local Credits = Instance.new("TextLabel")
+local SquidGame = Instance.new("TextButton")
+local AUT = Instance.new("TextButton")
+local Islands = Instance.new("TextButton")
+local Million = Instance.new("TextButton")
+local ProjectStarAutoFarm = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Frame.Position = UDim2.new(0.615819216, 0, 0.216867477, 0)
+Frame.Size = UDim2.new(0, 229, 0, 300)
+Frame.Active = true
+Frame.Draggable = true
+
+MaskedGui.Name = "Masked Gui"
+MaskedGui.Parent = Frame
+MaskedGui.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MaskedGui.BackgroundTransparency = -0.020
+MaskedGui.Position = UDim2.new(0, 0, 0.0101351347, 0)
+MaskedGui.Size = UDim2.new(0, 229, 0, 50)
+MaskedGui.Font = Enum.Font.SourceSans
+MaskedGui.Text = "Masked Gui"
+MaskedGui.TextColor3 = Color3.fromRGB(255, 255, 255)
+MaskedGui.TextSize = 32.000
+MaskedGui.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+Credits.Name = "Credits"
+Credits.Parent = Frame
+Credits.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Credits.Position = UDim2.new(0, 0, 0.897671938, 0)
+Credits.Size = UDim2.new(0, 229, 0, 30)
+Credits.Font = Enum.Font.SourceSans
+Credits.Text = "Made by ▒▒#0425"
+Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits.TextSize = 22.000
+
+SquidGame.Name = "Squid Game"
+SquidGame.Parent = Frame
+SquidGame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+SquidGame.Position = UDim2.new(0, 0, 0.179856122, 0)
+SquidGame.Size = UDim2.new(0, 229, 0, 38)
+SquidGame.Font = Enum.Font.SourceSans
+SquidGame.Text = "Squid Game Script"
+SquidGame.TextColor3 = Color3.fromRGB(255, 255, 255)
+SquidGame.TextSize = 28.000
+SquidGame.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/NocturneMoDz/Squid-Game/main/SCRIPT",true))()
+end)
+
+AUT.Name = "AUT"
+AUT.Parent = Frame
+AUT.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+AUT.Position = UDim2.new(0, 0, 0.316546768, 0)
+AUT.Size = UDim2.new(0, 229, 0, 37)
+AUT.Font = Enum.Font.SourceSans
+AUT.Text = "AUT Auto Farm"
+AUT.TextColor3 = Color3.fromRGB(255, 255, 255)
+AUT.TextSize = 38.000
+AUT.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/sannin9000/scripts/main/aut.lua"))()
+end)
+
+Islands.Name = "Islands"
+Islands.Parent = Frame
+Islands.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Islands.Position = UDim2.new(0, 0, 0.449640274, 0)
+Islands.Size = UDim2.new(0, 229, 0, 42)
+Islands.Font = Enum.Font.SourceSans
+Islands.Text = "Islands Gui"
+Islands.TextColor3 = Color3.fromRGB(255, 255, 255)
+Islands.TextSize = 53.000
+Islands.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("http://void-scripts.com/Scripts/islands_new.lua"))()
+end)
+
+Million.Name = "Million"
+Million.Parent = Frame
+Million.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Million.Position = UDim2.new(0, 0, 0.600719452, 0)
+Million.Size = UDim2.new(0, 229, 0, 41)
+Million.Font = Enum.Font.SourceSans
+Million.Text = "Millionare Tycoon Inf Cash"
+Million.TextColor3 = Color3.fromRGB(255, 255, 255)
+Million.TextSize = 24.000
+Million.MouseButton1Down:connect(function()
+	game:GetService("ReplicatedStorage").updateCollector:FireServer(1e18)
+end)
+
+ProjectStarAutoFarm.Name = "Project Star Auto Farm"
+ProjectStarAutoFarm.Parent = Frame
+ProjectStarAutoFarm.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+ProjectStarAutoFarm.Position = UDim2.new(0, 0, 0.74820143, 0)
+ProjectStarAutoFarm.Size = UDim2.new(0, 229, 0, 40)
+ProjectStarAutoFarm.Font = Enum.Font.SourceSans
+ProjectStarAutoFarm.Text = "Project Star Auto Farm"
+ProjectStarAutoFarm.TextColor3 = Color3.fromRGB(255, 255, 255)
+ProjectStarAutoFarm.TextSize = 28.000
+ProjectStarAutoFarm.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/lmmake/jojo-/main/ProjectJojoGame%3AD"))()
+end)
